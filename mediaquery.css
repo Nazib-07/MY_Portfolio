@@ -548,13 +548,6 @@
         width: 150px;
         height: 150px;
     }
-    
-    .hero .img::before,
-    .hero2 .img::before {
-        width: 200px;
-        height: 200px;
-    }
-    
     .hero2 .text P {
         font-size: 0.85rem;
         text-align: justify;
@@ -587,11 +580,6 @@
         width: 120px;
         height: 120px;
     }
-    
-    .hero3 .hero3-img::before {
-        width: 160px;
-        height: 160px;
-    }
 }
 
 /* Landscape Mode for Mobile */
@@ -607,10 +595,176 @@
         width: 200px;
         height: 200px;
     }
+}
+/* Media Queries for Footer */
+/* For Large Laptops (1024px and below) */
+@media (max-width: 1024px) {
+    .nav-item ul {
+        gap: 1.8rem;
+    }
     
-    .hero .img::before,
-    .hero2 .img::before {
-        width: 250px;
-        height: 250px;
+    .social-item {
+        gap: 1.8rem;
+    }
+}
+
+/* For Tablets (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .nav-item ul {
+        gap: 1.5rem;
+        padding: 1.2rem;
+    }
+    
+    .nav-item li a {
+        font-size: 1.1rem;
+    }
+    
+    .social-item {
+        gap: 1.5rem;
+    }
+    
+    .social-item img {
+        width: 25px;
+        height: 25px;
+        padding: 0.8rem;
+    }
+    
+    footer p {
+        text-align: center;
+        font-size: 0.8rem;
+        margin-top: 1.5rem;
+    }
+}
+
+/* For Small Tablets & Large Phones (576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .nav-item ul {
+        flex-wrap: wrap;
+        gap: 1.2rem;
+        padding: 1rem;
+    }
+    
+    .nav-item li a {
+        font-size: 1rem;
+    }
+    
+    .social-item {
+        flex-wrap: wrap;
+        gap: 1.2rem;
+    }
+    
+    .social-item img {
+        width: 25px;
+        height: 25px;
+        padding: 0.8rem;
+    }
+    
+    footer p {
+        text-align: center;
+        font-size: 0.8rem;
+        margin-top: 1.5rem;
+    }
+}
+
+/* For Mobile Phones (480px to 575px) */
+@media (min-width: 480px) and (max-width: 575px) {
+    .nav-item ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0.8rem;
+    }
+    
+    .nav-item li a {
+        font-size: 0.95rem;
+    }
+    
+    .social-item {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .social-item img {
+        width: 22px;
+        height: 22px;
+        padding: 0.7rem;
+        margin-top: 1rem;
+    }
+    
+    footer p {
+        text-align: center;
+        font-size: 0.75rem;
+        margin-top: 1.2rem;
+    }
+}
+
+/* For Small Mobile Phones (320px to 479px) */
+@media (min-width: 320px) and (max-width: 479px) {
+    .nav-item ul {
+        flex-direction: column;
+        gap: 0.8rem;
+        padding: 0.5rem;
+    }
+    
+    .nav-item li a {
+        font-size: 0.9rem;
+    }
+    
+    .social-item {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+    
+    .social-item img {
+        width: 20px;
+        height: 20px;
+        padding: 0.6rem;
+        margin-top: 0.8rem;
+    }
+    
+    footer p {
+        text-align: center;
+        font-size: 0.7rem;
+        margin-top: 1rem;
+    }
+}
+
+/* For Very Small Devices (below 320px) */
+@media (max-width: 319px) {
+    .nav-item ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.3rem;
+    }
+    
+    .nav-item li a {
+        font-size: 0.8rem;
+    }
+    
+    .social-item {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    .social-item img {
+        width: 18px;
+        height: 18px;
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    
+    footer p {
+        text-align: center;
+        font-size: 0.65rem;
+        margin-top: 0.8rem;
+    }
+}
+
+/* Landscape Mode for Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .nav-item ul {
+        padding: 0.8rem;
+    }
+    .social-item {
+        margin-top: 0.5rem;
     }
 }
