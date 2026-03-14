@@ -1,0 +1,616 @@
+/* Media Queries for all sections */
+
+/* For Large Laptops (1024px and below) */
+@media (max-width: 1024px) {
+    .container_nav {
+        padding: 1rem 2rem;
+        margin: 1.5rem 2rem;
+    }
+    
+    .hero .img img,
+    .hero2 .img img {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .hero .img::before,
+    .hero2 .img::before {
+        width: 400px;
+        height: 400px;
+    }
+    
+    .skills {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2.5rem;
+    }
+    
+    .hero3 {
+        margin: 3rem;
+        padding: 3rem;
+    }
+}
+
+/* For Tablets (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container_nav {
+        padding: 1rem 1.5rem;
+        margin: 1rem 1.5rem;
+    }
+    
+    .container_nav nav ul {
+        gap: 1rem;
+    }
+    
+    .container_nav nav li a {
+        padding: 0.8rem 1rem;
+        font-size: 0.95rem;
+    }
+    
+    .hero,
+    .hero2 {
+        flex-direction: column;
+        text-align: center;
+        padding: 2.5rem;
+    }
+    
+    .hero .text h1,
+    .hero2 .text h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero .text h2 {
+        font-size: 1.6rem;
+    }
+    
+    .hero .img img,
+    .hero2 .img img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .hero .img::before,
+    .hero2 .img::before {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .hero2 .text P {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    
+    .hero3 {
+        flex-direction: column;
+        margin: 2rem;
+        padding: 2.5rem;
+        text-align: center;
+    }
+    
+    .hero3 .info h2 {
+        font-size: 2.2rem;
+    }
+    
+    .hero3 .form {
+        width: 100%;
+    }
+    
+    .skills {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+    
+    .icons img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* For Small Tablets & Large Phones (576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .container_nav {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+    .container_nav nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .container_nav nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    
+    .container_nav nav li a {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .container_nav nav h1 {
+        margin: 0;
+    }
+    
+    .hero,
+    .hero2 {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+    
+    .hero .text h1,
+    .hero2 .text h1 {
+        font-size: 2rem;
+    }
+    
+    .hero .text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .hero .text .btn1 {
+        margin-right: 2rem;
+    }
+    
+    .hero .img img,
+    .hero2 .img img {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .hero .img::before,
+    .hero2 .img::before {
+        width: 320px;
+        height: 320px;
+    }
+    
+    .hero2 .text P {
+        text-align: justify;
+        font-size: 1rem;
+    }
+    
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+    }
+    
+    .section-title h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero3 {
+        flex-direction: column;
+        margin: 1.5rem;
+        padding: 2rem;
+    }
+    
+    .hero3 .info h2 {
+        font-size: 2rem;
+    }
+    
+    .hero3 .hero3-img img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .hero3 .hero3-img::before {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .hero3 .form .form-field {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* For Mobile Phones (480px to 575px) */
+@media (min-width: 480px) and (max-width: 575px) {
+    .container_nav {
+        padding: 0.8rem;
+        margin: 0.8rem;
+    }
+    
+    .container_nav nav {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .container_nav nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    .container_nav nav li a {
+        padding: 0.5rem 0.7rem;
+        font-size: 0.85rem;
+    }
+    
+    .container_nav nav h1 {
+        margin: 0;
+        font-size: 1.8rem;
+    }
+    
+    .hero,
+    .hero2 {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    
+    .hero .text h1,
+    .hero2 .text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero .text h2 {
+        font-size: 1.3rem;
+    }
+    
+    .hero .text .button-group {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .hero .text .btn1 {
+        margin-right: 0;
+    }
+    
+    .hero .text .btn1,
+    .hero .text .btn2 {
+        width: 200px;
+        padding: 12px;
+    }
+    
+    .hero .img img,
+    .hero2 .img img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .hero .img::before,
+    .hero2 .img::before {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .hero2 .text P {
+        text-align: justify;
+        font-size: 0.95rem;
+    }
+    
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .icons img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .icons p {
+        font-size: 0.9rem;
+    }
+    
+    .section-title h1 {
+        font-size: 2rem;
+    }
+    
+    .section-title button {
+        padding: 12px;
+        font-size: 1rem;
+    }
+    
+    .hero3 {
+        flex-direction: column;
+        margin: 1rem;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+    
+    .hero3 .info h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero3 .hero3-img img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .hero3 .hero3-img::before {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .hero3 .form .form-field {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .hero3 .form .submit-btn {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+}
+
+/* For Small Mobile Phones (320px to 479px) */
+@media (min-width: 320px) and (max-width: 479px) {
+    .container_nav {
+        padding: 0.6rem;
+        margin: 0.5rem;
+        border-radius: 30px;
+    }
+    
+    .container_nav nav {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+    
+    .container_nav nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.3rem;
+    }
+    
+    .container_nav nav li a {
+        padding: 0.4rem 0.5rem;
+        font-size: 0.75rem;
+    }
+    
+    .container_nav nav h1 {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    
+    .hero,
+    .hero2 {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .hero .text h1,
+    .hero2 .text h1 {
+        font-size: 1.5rem;
+    }
+    
+    .hero .text h2 {
+        font-size: 1.1rem;
+    }
+    
+    .hero .text .button-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: center;
+    }
+    
+    .hero .text .btn1,
+    .hero .text .btn2 {
+        width: 180px;
+        padding: 10px;
+        font-size: 1rem;
+        margin-right: 0;
+    }
+    
+    .hero .img img,
+    .hero2 .img img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .hero .img::before,
+    .hero2 .img::before {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .hero2 .text P {
+        text-align: justify;
+        font-size: 0.9rem;
+    }
+    
+    .skills {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .icons img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .icons p {
+        font-size: 0.9rem;
+    }
+    
+    .section-title h1 {
+        font-size: 1.8rem;
+    }
+    
+    .section-title button {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+    
+    .hero3 {
+        flex-direction: column;
+        margin: 0.8rem;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .hero3 .info h2 {
+        font-size: 1.5rem;
+    }
+    
+    .hero3 .hero3-img img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .hero3 .hero3-img::before {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .hero3 .form .form-field {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .hero3 .form .label-input input,
+    .hero3 .form .message textarea {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .hero3 .form .submit-btn {
+        padding: 0.8rem;
+        font-size: 0.95rem;
+    }
+    
+    .hero3 .form .label-input label,
+    .hero3 .form .message label {
+        font-size: 1rem;
+    }
+}
+
+/* For Very Small Devices (below 320px) */
+@media (max-width: 319px) {
+    .container_nav {
+        padding: 0.4rem;
+        margin: 0.3rem;
+        border-radius: 25px;
+    }
+    
+    .container_nav nav {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+    
+    .container_nav nav ul {
+        flex-direction: column;
+        gap: 0.3rem;
+        width: 100%;
+    }
+    
+    .container_nav nav li a {
+        display: block;
+        text-align: center;
+        padding: 0.3rem 0.5rem;
+        font-size: 0.7rem;
+    }
+    
+    .container_nav nav h1 {
+        margin: 0;
+        font-size: 1.3rem;
+    }
+    
+    .hero,
+    .hero2 {
+        flex-direction: column;
+        text-align: center;
+        padding: 0.8rem;
+    }
+    
+    .hero .text h1,
+    .hero2 .text h1 {
+        font-size: 1.3rem;
+    }
+    
+    .hero .text h2 {
+        font-size: 1rem;
+    }
+    
+    .hero .text .button-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .hero .text .btn1,
+    .hero .text .btn2 {
+        width: 150px;
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+    
+    .hero .img img,
+    .hero2 .img img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .hero .img::before,
+    .hero2 .img::before {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .hero2 .text P {
+        font-size: 0.85rem;
+        text-align: justify;
+    }
+    
+    .skills {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0.8rem;
+    }
+    
+    .icons img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .section-title h1 {
+        font-size: 1.5rem;
+    }
+    
+    .hero3 {
+        margin: 0.5rem;
+        padding: 0.8rem;
+    }
+    
+    .hero3 .info h2 {
+        font-size: 1.3rem;
+    }
+    
+    .hero3 .hero3-img img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .hero3 .hero3-img::before {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+/* Landscape Mode for Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero,
+    .hero2 {
+        flex-direction: row;
+        padding: 2rem;
+    }
+    
+    .hero .img img,
+    .hero2 .img img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .hero .img::before,
+    .hero2 .img::before {
+        width: 250px;
+        height: 250px;
+    }
+}

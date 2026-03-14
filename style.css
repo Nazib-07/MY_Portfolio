@@ -1,0 +1,430 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222831;
+}
+
+.container_nav {
+    padding: 1rem 4rem;
+    background-color: #2d343c;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin: 2rem 3rem;
+    border-radius: 50px;
+}
+
+.container_nav nav h1 {
+    color: rgb(219, 219, 219);
+    font-family: cursive;
+    cursor: pointer;
+}
+
+.container_nav nav h1:hover {
+    color: #00ADB5;
+    transition: all 0.3s ease-in;
+}
+
+.container_nav nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_nav nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2.5rem;
+}
+
+.container_nav nav li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: cursive;
+    padding: 1rem 1.2rem;
+    transition: all 0.3s ease-out;
+}
+
+.container_nav nav li a:hover {
+    background-color: rgb(19, 194, 194);
+    border-radius: 50px;
+}
+
+.hero {
+    padding: 3.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero .img {
+    position: relative;
+    display: inline-block;
+}
+
+.hero .img::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle at center, #00ADB5 0%, transparent 65%);
+    opacity: 0.4;
+    border-radius: 50%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.hero .img img {
+    width: 450px;
+    height: 450px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.hero .img img:hover {
+    transform: scale(1.1);
+}
+
+.hero .text h1 {
+    font-family: cursive;
+    font-size: 2.5rem;
+    color: rgb(212, 212, 212);
+}
+
+.hero .text h2 {
+    font-family: cursive;
+    font-size: 1.8rem;
+    color: #00ADB5;
+}
+
+.hero .text .btn1 {
+    background-color: #00ADB5;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 5rem;
+    font-family: cursive;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.hero .text .btn1:hover {
+    background-color: #0a7278;
+    color: whitesmoke;
+    transition: all 0.4s ease-in;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hero .text .btn2 {
+    background-color: #393E46;
+    color: #08e5f0;
+    padding: 15px;
+    font-family: cursive;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero .text .btn2:hover {
+    background-color: #0e0e0f;
+    color: whitesmoke;
+    transition: all 0.4s ease-in;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hero2 {
+    padding: 3.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero2 .img {
+    position: relative;
+    display: inline-block;
+}
+
+.hero2 .img::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle at center, #00ADB5 0%, transparent 65%);
+    opacity: 0.4;
+    border-radius: 50%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.hero2 .img img {
+    width: 450px;
+    height: 450px;
+    position: relative;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.hero2 .img img:hover {
+    transform: scale(1.1);
+}
+
+.hero2 .text {
+    max-width: 700px;
+}
+
+.hero2 .text h1 {
+    font-family: cursive;
+    font-size: 2.5rem;
+    color: rgb(212, 212, 212);
+}
+
+.hero2 .text span {
+    color: #1db3bb;
+}
+
+.hero2 .text P {
+    text-align: justify;
+    font-family: cursive;
+    font-size: 1.2rem;
+    color: rgb(214, 214, 214);
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 3.5rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icons img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.4s ease-out;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+}
+
+.icons p {
+    color: rgb(214, 214, 214);
+    font-family: cursive;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.section-title {
+    text-align: center;
+    grid-column: 1/-1;
+    padding: 2.5rem;
+}
+
+.section-title h1 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: cursive;
+}
+
+.section-title span {
+    color: #03b3bc;
+}
+
+.section-title button {
+    background-color: #393E46;
+    color: #08e5f0;
+    padding: 15px;
+    font-family: cursive;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-title button:hover {
+    background-color: #0e0e0f;
+    color: whitesmoke;
+    transition: all 0.4s ease-in;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hero3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem;
+    background-color: #2d343c;
+    border-radius: 15px;
+    margin: 5rem;
+    gap: 3rem;
+
+}
+
+.hero3 .info h2 {
+    font-family: cursive;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    margin-bottom: 2rem;
+}
+
+.hero3 .info span {
+    color: #00ADB5;
+}
+
+
+.hero3 .hero3-img {
+    display: inline-block;
+    position: relative;
+}
+
+.hero3 .hero3-img img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transition: all 0.4s ease-out;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.hero3 .hero3-img img:hover {
+    transform: scale(1.1);
+}
+
+.hero3 .hero3-img::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle at center, #00ADB5 0%, transparent 70%);
+    opacity: 0.4;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.hero3 .form {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero3 .form .form-field {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.hero3 .form .label-input {
+    flex: 1;
+}
+
+.hero3 .form .label-input label {
+    display: block;
+    font-size: 1.1rem;
+    color: whitesmoke;
+    font-family: cursive;
+    margin-bottom: 0.5rem;
+}
+
+.hero3 .form .label-input input {
+    width: 100%;
+    background-color: #2d343c;
+    padding: 1rem;
+    font-family: cursive;
+    border-radius: 10px;
+    border: 1px solid #3f454d;
+    color: #1ad4de;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+}
+
+.hero3 .form .message {
+    margin-bottom: 1.5rem;
+}
+
+.hero3 .form .message label {
+    display: block;
+    font-size: 1.1rem;
+    color: whitesmoke;
+    font-family: cursive;
+    margin-bottom: 0.5rem;
+}
+
+.hero3 .form .message textarea {
+    width: 100%;
+    background-color: #2d343c;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #3f454d;
+    color: white;
+    font-size: 1rem;
+    font-family: cursive;
+    transition: all 0.4s ease-out;
+}
+
+.hero3 .form .submit-btn {
+    background-color: #00ADB5;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: cursive;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-out;
+    width: 100%;
+}
+
+.hero3 .form .submit-btn:hover {
+    background-color: #0a7278;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hero3 .form input::placeholder,
+.hero3 .form textarea::placeholder {
+    color: #888;
+    font-family: cursive;
+    font-size: 0.9rem;
+}
