@@ -4,3 +4,28 @@
 .Dark{
     background-color: #222831;
 }
+.nav_light{
+    background-color: #e5e5e5;
+    color: #222831;
+}
+.nav_dark{
+    background-color: #222831;
+    color: whitesmoke;
+}
+.nav_light nav h1,
+.nav_light nav li a {
+    color: #333333;
+    transition: all 0.4s ease-out;
+}
+
+.nav_light nav li a:hover {
+    background-color: #00ADB5 ;
+    color: white ;
+}
+.hero_text_light{
+    color: #333333;
+}
+
+.hero_text_dark {
+    color: whitesmoke;
+}
