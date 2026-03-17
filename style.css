@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #222831;
+    transition: all 0.3s ease-in-out;
 }
 
 .container_nav {
@@ -211,8 +212,8 @@ body {
 .skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    padding: 3.5rem;
+    gap: 1rem;
+    padding: 3rem;
     margin: 0 auto;
     max-width: 1200px;
     justify-items: center;
@@ -242,12 +243,11 @@ body {
     color: rgb(214, 214, 214);
     font-family: cursive;
     margin-top: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .section-title {
     text-align: center;
-    grid-column: 1/-1;
     padding: 2.5rem;
 }
 
@@ -274,6 +274,7 @@ body {
     font-weight: 600;
     cursor: pointer;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    margin: 1.2rem auto;
 }
 
 .section-title button:hover {
@@ -288,10 +289,10 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 4rem;
-    background-color: #2d343c;
+    background-color: #161718;
     border-radius: 15px;
     margin: 5rem;
-    gap: 3rem;
+    gap: 1rem;
 
 }
 
